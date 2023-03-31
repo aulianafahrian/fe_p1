@@ -3,13 +3,11 @@ import { addInner } from "https://bukulapak.github.io/element/process.js";
 import { getRandomColor, getRandomColorName } from "https://bukulapak.github.io/image/process.js";
 import { isiTabel } from "./table.js";
 let urlAPI = "https://aufa-ulbi.herokuapp.com/presensi";
-get(urlAPI,isiTablePresensi);
-
-function isiTablePresensi(results){
-    console.log(results);
+get(urlAPI, isiTablePresensi);
+function isiTablePresensi(results) {
     results.forEach(isiRow);
 }
-function isiRow(value){
+function isiRow(value) {
     let content = 
     isiTabel.replace("#NAMA#", value.biodata.nama)
             .replace("#NOHP#", value.biodata.phone_number)
