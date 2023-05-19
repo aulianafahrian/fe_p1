@@ -1,5 +1,5 @@
-function deleteData() {
-    var presensiId = document.querySelector('a[data-presensi-id]').getAttribute('data-presensi-id');
+function deleteData(IDHAPUS) {
+    var presensiId = IDHAPUS;
     var target_url = "https://aufa-ulbi.herokuapp.com/delete/" + presensiId;
 
     var requestOptions = {
