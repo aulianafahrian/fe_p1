@@ -3,7 +3,7 @@ const presensiId = urlParams.get('presensiId');
 
 export let urlPUT = "https://aufa-ulbi.herokuapp.com/upd/" + presensiId;
 
-export function AmbilResponse(results){
+export function AmbilResponse(result){
     console.log(result);
     alert(result.message);
     window.location.href = "index.html";
