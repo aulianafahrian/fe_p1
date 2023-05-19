@@ -27,4 +27,4 @@ function pushData(){
 
 }
 
-onClick("button", putData);
+onClick("button", pushData);
